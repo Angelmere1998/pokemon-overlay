@@ -26,7 +26,8 @@ body{
   width:125px;
   height:125px;
   object-fit:contain;
-  image-rendering:auto;
+  image-rendering:high-quality;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
   z-index:1;
 }
 
