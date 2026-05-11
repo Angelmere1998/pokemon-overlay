@@ -10,7 +10,7 @@ body{
 #team{
   position:absolute;
 
-  bottom:20px;
+  bottom:55px;
   left:50%;
 
   transform:translateX(-50%);
@@ -30,8 +30,8 @@ body{
 }
 
 .pokemon img{
-  width:125px;
-  height:125px;
+  width:150px;
+  height:150px;
 
   object-fit:contain;
 
@@ -48,7 +48,7 @@ body{
   z-index:2;
 
   font-family:'Orbitron', sans-serif;
-  font-size:18px;
+  font-size:22px;
   font-weight:900;
 
   color:white;
