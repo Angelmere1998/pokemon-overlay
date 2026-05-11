@@ -1,9 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
 body{
   margin:0;
   background:transparent;
   overflow:hidden;
-  font-family:Arial;
 }
 
 #team{
@@ -18,22 +19,30 @@ body{
   flex-direction:column;
   align-items:center;
   text-align:center;
+  position:relative;
 }
 
 .pokemon img{
-  width:90px;
-  height:90px;
+  width:120px;
+  height:120px;
   object-fit:contain;
+  z-index:1;
 }
 
 .name{
-  margin-top:-5px;
-  font-size:28px;
-  font-weight:bold;
+  position:relative;
+  margin-top:-28px;
+  z-index:2;
+
+  font-family:'Orbitron', sans-serif;
+  font-size:22px;
+  font-weight:900;
+
   color:white;
+
   text-shadow:
-    -2px -2px 0 black,
-     2px -2px 0 black,
-    -2px  2px 0 black,
-     2px  2px 0 black;
+    -3px -3px 0 black,
+     3px -3px 0 black,
+    -3px  3px 0 black,
+     3px  3px 0 black;
 }
