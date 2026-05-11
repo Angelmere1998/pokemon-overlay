@@ -1,37 +1,27 @@
-const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRYDgYj06iQrhceVBuOyNeNDWJiZulQzONZgs9IqWSHDRz67F9YorbwzM5D6j2VD3i5X4btHYZI1-0Y/pub?output=csv";
+
+const jsonURL = "https://angelmere1998.github.io/pokemon-overlay/pokemon.json";
 
 async function loadPokemon() {
 
-    const response = await fetch(sheetURL);
-    const data = await response.text();
-
-    const rows = data.split("\n").slice(1);
+    const response = await fetch(jsonURL);
+    const data = await response.json();
 
     const team = document.getElementById("team");
 
     team.innerHTML = "";
 
-    rows.forEach(row => {
+    data.forEach(pokemon => {
 
-        const cols = row.split(",");
+        const div = document.createElement("div");
 
-        const pokemon = cols[0];
-        const nickname = cols[1];
-        const image = cols[2];
+        div.className = "pokemon";
 
-        if (image) {
+        div.innerHTML = `
+            <img src="${pokemon.image}">
+            <div class="name">${pokemon.name}</div>
+        `;
 
-            const div = document.createElement("div");
-
-            div.className = "pokemon";
-
-            div.innerHTML = `
-                <img src="${image}">
-                <div class="name">${nickname}</div>
-            `;
-
-            team.appendChild(div);
-        }
+        team.appendChild(div);
 
     });
 
