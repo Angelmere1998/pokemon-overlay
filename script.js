@@ -29,4 +29,4 @@ async function loadPokemon() {
 
 loadPokemon();
 
-setInterval(loadPokemon, 5000);
+setInterval(loadPokemon, 3000);
