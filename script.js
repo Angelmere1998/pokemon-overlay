@@ -3,7 +3,7 @@ const jsonURL = "https://angelmere1998.github.io/pokemon-overlay/pokemon.json";
 
 async function loadPokemon() {
 
-    const response = await fetch(jsonURL);
+    const response = await fetch(jsonURL + "?t=" + new Date().getTime());
     const data = await response.json();
 
     const team = document.getElementById("team");
