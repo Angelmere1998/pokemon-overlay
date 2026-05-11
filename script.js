@@ -3,30 +3,39 @@ const jsonURL = "https://angelmere1998.github.io/pokemon-overlay/pokemon.json";
 
 async function loadPokemon() {
 
-    const response = await fetch(jsonURL + "?t=" + new Date().getTime());
-    const data = await response.json();
+    try {
 
-    const team = document.getElementById("team");
+        const response = await fetch(jsonURL + "?t=" + Date.now(), {
+            cache: "no-store"
+        });
 
-    team.innerHTML = "";
+        const data = await response.json();
 
-    data.forEach(pokemon => {
+        const team = document.getElementById("team");
 
-        const div = document.createElement("div");
+        team.innerHTML = "";
 
-        div.className = "pokemon";
+        data.forEach(pokemon => {
 
-        div.innerHTML = `
-            <img src="${pokemon.image}">
-            <div class="name">${pokemon.name}</div>
-        `;
+            const div = document.createElement("div");
 
-        team.appendChild(div);
+            div.className = "pokemon";
 
-    });
+            div.innerHTML = `
+                <img src="${pokemon.image}">
+                <div class="name">${pokemon.name}</div>
+            `;
+
+            team.appendChild(div);
+
+        });
+
+    } catch (error) {
+        console.error(error);
+    }
 
 }
 
 loadPokemon();
 
-setInterval(loadPokemon, 3000);
+setInterval(loadPokemon, 2000);
