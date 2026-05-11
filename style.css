@@ -10,17 +10,15 @@ body{
 #team{
   position:absolute;
 
-  bottom:55px;
-  left:50%;
-
-  transform:translateX(-50%);
+  bottom:40px;
+  left:35px;
 
   display:flex;
-  gap:15px;
+  gap:38px;
 }
 
 .pokemon{
-  width:120px;
+  width:150px;
 
   display:flex;
   flex-direction:column;
