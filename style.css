@@ -1,3 +1,4 @@
+
 body{
   margin:0;
   background:transparent;
@@ -7,22 +8,26 @@ body{
 
 #team{
   display:flex;
-  gap:30px;
+  gap:10px;
   padding:20px;
 }
 
 .pokemon{
+  width:140px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
   text-align:center;
 }
 
 .pokemon img{
-  width:140px;
-  height:140px;
+  width:90px;
+  height:90px;
   object-fit:contain;
 }
 
 .name{
-  margin-top:10px;
+  margin-top:-5px;
   font-size:28px;
   font-weight:bold;
   color:white;
