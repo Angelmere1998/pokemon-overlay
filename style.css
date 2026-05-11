@@ -10,15 +10,15 @@ body{
 #team{
   position:absolute;
 
-  bottom:40px;
-  left:35px;
+  bottom:0px;
+  left:10px;
 
   display:flex;
-  gap:38px;
+  gap:0px;
 }
 
 .pokemon{
-  width:150px;
+  width:190px;
 
   display:flex;
   flex-direction:column;
@@ -28,8 +28,8 @@ body{
 }
 
 .pokemon img{
-  width:150px;
-  height:150px;
+  width:170px;
+  height:170px;
 
   object-fit:contain;
 
@@ -41,12 +41,12 @@ body{
 .name{
   position:relative;
 
-  margin-top:-28px;
+  margin-top:-38px;
 
   z-index:2;
 
   font-family:'Orbitron', sans-serif;
-  font-size:22px;
+  font-size:20px;
   font-weight:900;
 
   color:white;
