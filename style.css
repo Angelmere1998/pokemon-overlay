@@ -8,40 +8,47 @@ body{
 }
 
 #team{
-  width:2560px;
+  position:absolute;
+
+  bottom:20px;
+  left:50%;
+
+  transform:translateX(-50%);
 
   display:flex;
-  justify-content:center;
-  gap:10px;
-
-  padding-top:10px;
+  gap:15px;
 }
 
 .pokemon{
-  width:110px;
+  width:120px;
+
   display:flex;
   flex-direction:column;
   align-items:center;
-  text-align:center;
+
   position:relative;
 }
 
 .pokemon img{
   width:125px;
   height:125px;
+
   object-fit:contain;
-  image-rendering:high-quality;
-  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+
+  image-rendering:auto;
+
   z-index:1;
 }
 
 .name{
   position:relative;
+
   margin-top:-28px;
+
   z-index:2;
 
   font-family:'Orbitron', sans-serif;
-  font-size:16px;
+  font-size:18px;
   font-weight:900;
 
   color:white;
