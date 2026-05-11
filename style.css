@@ -28,8 +28,8 @@ body{
 }
 
 .pokemon img{
-  width:220px;
-  height:220px;
+  width:500px;
+  height:500px;
 
   object-fit:contain;
 
