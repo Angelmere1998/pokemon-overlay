@@ -1,12 +1,16 @@
 
 [
   {
-    "name": "Chispitas",
+    "name": "Nala",
+    "image": "https://cdn.discordapp.com/attachments/1476651295250190599/1503261753235079289/792.png?ex=6a02b51b&is=6a01639b&hm=6162aa83d9a4aaa57453629d61e264eaa0f9ea699518e3b896c5a5a358850c3f&"
+  },
+  {
+    "name": "Emanuel",
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
   },
   {
-    "name": "Chispitas",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    "name": "Bertin",
+    "image": ""
   },
   {
     "name": "Paquita",
@@ -14,14 +18,10 @@
   },
   {
     "name": "Amanda",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    "image": "https://cdn.discordapp.com/attachments/1476651295250190599/1503274820320624722/732.png?ex=6a02c146&is=6a016fc6&hm=8d04b46d9e240cb2ca84e194f50d6edf6d6bbacf688d8fd8e2070b6cf22fcf9f&"
   },
   {
-    "name": "Rodolfo",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-  },
-  {
-    "name": "Josefa",
-    "image": "https://cdn.discordapp.com/attachments/1476651295250190599/1503261753235079289/792.png?ex=6a02b51b&is=6a01639b&hm=6162aa83d9a4aaa57453629d61e264eaa0f9ea699518e3b896c5a5a358850c3f&"
+    "name": "Eva Maria",
+    "image": "https://cdn.discordapp.com/attachments/1476651295250190599/1503274297290915870/pokemon-x-and-y-pokemon-sun-and-moon-pokemon-diamond-and-pearl-ash-ketchum-gible-pokmon-9bd18d11e6994483c01218834ef7c6f7.png?ex=6a02c0c9&is=6a016f49&hm=36a56c825ffbfe0a4d327f9aaeed57668b61ce9e2b4b7f8e35b575f33455bfa9&"
   }
 ]
